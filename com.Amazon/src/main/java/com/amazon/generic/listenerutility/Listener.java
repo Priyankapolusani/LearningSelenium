@@ -47,7 +47,7 @@ public class Listener extends BaseClass  implements ITestListener{
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-	
+	Reporter.log("Taking Screenshot-- Completed---"+name, true);
 	}
 
 	@Override

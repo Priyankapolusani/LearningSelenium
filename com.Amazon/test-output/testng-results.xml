@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[get SuiteConnections Done Sucessfully]]>
@@ -8,13 +8,10 @@
       <![CDATA[PreCondition Done Sucessfully]]>
     </line>
     <line>
-      <![CDATA[BrowserSetup sucessfully]]>
+      <![CDATA[BrowserSetup chromesuccessful]]>
     </line>
     <line>
       <![CDATA[ login sucessfully]]>
-    </line>
-    <line>
-      <![CDATA[createUser_invalidData for register Test]]>
     </line>
     <line>
       <![CDATA[ logout sucessfully]]>
@@ -23,16 +20,16 @@
       <![CDATA[ login sucessfully]]>
     </line>
     <line>
-      <![CDATA[createUser_invalidData for register Test]]>
-    </line>
-    <line>
       <![CDATA[ logout sucessfully]]>
     </line>
     <line>
       <![CDATA[ login sucessfully]]>
     </line>
     <line>
-      <![CDATA[createUser_invalidData for register Test]]>
+      <![CDATA[ logout sucessfully]]>
+    </line>
+    <line>
+      <![CDATA[ login sucessfully]]>
     </line>
     <line>
       <![CDATA[ logout sucessfully]]>
@@ -47,26 +44,26 @@
       <![CDATA[Terminate SuiteConnections Done Sucessfully]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-08-09T10:46:11 IST" name="Suite" finished-at="2024-08-09T10:46:42 IST" duration-ms="30729">
+  <suite started-at="2024-09-11T17:11:57 IST" name="FunctionalityTest" finished-at="2024-09-11T17:12:04 IST" duration-ms="7850">
     <groups>
     </groups>
-    <test started-at="2024-08-09T10:46:11 IST" name="Test" finished-at="2024-08-09T10:46:42 IST" duration-ms="30729">
+    <test started-at="2024-09-11T17:11:57 IST" name="Test" finished-at="2024-09-11T17:12:04 IST" duration-ms="7850">
       <class name="com.amazon.registertest.RegisterTest">
-        <test-method is-config="true" signature="getSuiteconnection()[pri:0, instance:com.amazon.registertest.RegisterTest@55fe41ea]" started-at="2024-08-09T10:46:11 IST" name="getSuiteconnection" finished-at="2024-08-09T10:46:11 IST" duration-ms="13" status="PASS">
+        <test-method is-config="true" signature="getSuiteconnection()[pri:0, instance:com.amazon.registertest.RegisterTest@4686afc2]" started-at="2024-09-11T17:11:57 IST" name="getSuiteconnection" finished-at="2024-09-11T17:11:57 IST" duration-ms="15" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[get SuiteConnections Done Sucessfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- getSuiteconnection -->
-        <test-method is-config="true" signature="precondition()[pri:0, instance:com.amazon.registertest.RegisterTest@55fe41ea]" started-at="2024-08-09T10:46:11 IST" name="precondition" finished-at="2024-08-09T10:46:11 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="precondition()[pri:0, instance:com.amazon.registertest.RegisterTest@4686afc2]" started-at="2024-09-11T17:11:57 IST" name="precondition" finished-at="2024-09-11T17:11:57 IST" duration-ms="312" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[PreCondition Done Sucessfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- precondition -->
-        <test-method is-config="true" signature="browserSetup(java.lang.String)[pri:0, instance:com.amazon.registertest.RegisterTest@55fe41ea]" started-at="2024-08-09T10:46:11 IST" name="browserSetup" finished-at="2024-08-09T10:46:13 IST" duration-ms="1889" status="PASS">
+        <test-method is-config="true" signature="browserSetup(java.lang.String)[pri:0, instance:com.amazon.registertest.RegisterTest@4686afc2]" started-at="2024-09-11T17:11:57 IST" name="browserSetup" finished-at="2024-09-11T17:11:59 IST" duration-ms="2432" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -76,139 +73,97 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[BrowserSetup sucessfully]]>
+              <![CDATA[BrowserSetup chromesuccessful]]>
             </line>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.amazon.registertest.RegisterTest@55fe41ea]" started-at="2024-08-09T10:46:13 IST" name="login" finished-at="2024-08-09T10:46:13 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:com.amazon.registertest.RegisterTest@4686afc2]" started-at="2024-09-11T17:11:59 IST" name="login" finished-at="2024-09-11T17:11:59 IST" duration-ms="0" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[ login sucessfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="createUser_invalidData(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.amazon.registertest.RegisterTest@55fe41ea]" started-at="2024-08-09T10:46:13 IST" name="createUser_invalidData" data-provider="register" finished-at="2024-08-09T10:46:22 IST" duration-ms="9531" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Priya]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[priya@gmail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Testing]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="registerValidData()[pri:0, instance:com.amazon.registertest.RegisterTest@4686afc2]" started-at="2024-09-11T17:11:59 IST" name="registerValidData" finished-at="2024-09-11T17:12:04 IST" duration-ms="4271" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[createUser_invalidData for register Test]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- createUser_invalidData -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.amazon.registertest.RegisterTest@55fe41ea]" started-at="2024-08-09T10:46:22 IST" name="logout" finished-at="2024-08-09T10:46:22 IST" duration-ms="4" status="PASS">
+        </test-method> <!-- registerValidData -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.amazon.registertest.RegisterTest@4686afc2]" started-at="2024-09-11T17:12:04 IST" name="logout" finished-at="2024-09-11T17:12:04 IST" duration-ms="0" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[ logout sucessfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.amazon.registertest.RegisterTest@55fe41ea]" started-at="2024-08-09T10:46:22 IST" name="login" finished-at="2024-08-09T10:46:22 IST" duration-ms="1" status="PASS">
+        <test-method signature="validateRegisterButtoncolour()[pri:0, instance:com.amazon.registertest.RegisterTest@4686afc2]" started-at="2024-09-11T17:12:04 IST" name="validateRegisterButtoncolour" finished-at="2024-09-11T17:12:04 IST" duration-ms="82" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateRegisterButtoncolour -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.amazon.registertest.RegisterTest@4686afc2]" started-at="2024-09-11T17:12:04 IST" name="login" finished-at="2024-09-11T17:12:04 IST" duration-ms="0" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[ login sucessfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="createUser_invalidData(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.amazon.registertest.RegisterTest@55fe41ea]" started-at="2024-08-09T10:46:22 IST" name="createUser_invalidData" data-provider="register" finished-at="2024-08-09T10:46:32 IST" duration-ms="9515" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Reshma]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[priyanka@gmail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Developer]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[createUser_invalidData for register Test]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- createUser_invalidData -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.amazon.registertest.RegisterTest@55fe41ea]" started-at="2024-08-09T10:46:32 IST" name="logout" finished-at="2024-08-09T10:46:32 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.amazon.registertest.RegisterTest@4686afc2]" started-at="2024-09-11T17:12:04 IST" name="logout" finished-at="2024-09-11T17:12:04 IST" duration-ms="1" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[ logout sucessfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.amazon.registertest.RegisterTest@55fe41ea]" started-at="2024-08-09T10:46:32 IST" name="login" finished-at="2024-08-09T10:46:32 IST" duration-ms="2" status="PASS">
+        <test-method signature="validateRegisterButtonposition()[pri:0, instance:com.amazon.registertest.RegisterTest@4686afc2]" started-at="2024-09-11T17:12:04 IST" name="validateRegisterButtonposition" finished-at="2024-09-11T17:12:04 IST" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateRegisterButtonposition -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.amazon.registertest.RegisterTest@4686afc2]" started-at="2024-09-11T17:12:04 IST" name="login" finished-at="2024-09-11T17:12:04 IST" duration-ms="0" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[ login sucessfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="createUser_invalidData(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.amazon.registertest.RegisterTest@55fe41ea]" started-at="2024-08-09T10:46:32 IST" name="createUser_invalidData" data-provider="register" finished-at="2024-08-09T10:46:41 IST" duration-ms="9501" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Priyanka]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[priyapolusani@gmail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Devops]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[createUser_invalidData for register Test]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- createUser_invalidData -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.amazon.registertest.RegisterTest@55fe41ea]" started-at="2024-08-09T10:46:41 IST" name="logout" finished-at="2024-08-09T10:46:41 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.amazon.registertest.RegisterTest@4686afc2]" started-at="2024-09-11T17:12:04 IST" name="logout" finished-at="2024-09-11T17:12:04 IST" duration-ms="0" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[ logout sucessfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.amazon.registertest.RegisterTest@55fe41ea]" started-at="2024-08-09T10:46:41 IST" name="closebrowser" finished-at="2024-08-09T10:46:42 IST" duration-ms="161" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:com.amazon.registertest.RegisterTest@4686afc2]" started-at="2024-09-11T17:12:04 IST" name="login" finished-at="2024-09-11T17:12:04 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ login sucessfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="validateRegisterButtonsize()[pri:0, instance:com.amazon.registertest.RegisterTest@4686afc2]" started-at="2024-09-11T17:12:04 IST" name="validateRegisterButtonsize" finished-at="2024-09-11T17:12:04 IST" duration-ms="77" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateRegisterButtonsize -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.amazon.registertest.RegisterTest@4686afc2]" started-at="2024-09-11T17:12:04 IST" name="logout" finished-at="2024-09-11T17:12:04 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ logout sucessfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:com.amazon.registertest.RegisterTest@4686afc2]" started-at="2024-09-11T17:12:04 IST" name="closebrowser" finished-at="2024-09-11T17:12:04 IST" duration-ms="142" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[CloseBrowser Sucessfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- closebrowser -->
-        <test-method is-config="true" signature="postcondition()[pri:0, instance:com.amazon.registertest.RegisterTest@55fe41ea]" started-at="2024-08-09T10:46:42 IST" name="postcondition" finished-at="2024-08-09T10:46:42 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="postcondition()[pri:0, instance:com.amazon.registertest.RegisterTest@4686afc2]" started-at="2024-09-11T17:12:04 IST" name="postcondition" finished-at="2024-09-11T17:12:04 IST" duration-ms="398" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[PostCondition Done Sucessfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- postcondition -->
-        <test-method is-config="true" signature="terminateSuiteconnection()[pri:0, instance:com.amazon.registertest.RegisterTest@55fe41ea]" started-at="2024-08-09T10:46:42 IST" name="terminateSuiteconnection" finished-at="2024-08-09T10:46:42 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="terminateSuiteconnection()[pri:0, instance:com.amazon.registertest.RegisterTest@4686afc2]" started-at="2024-09-11T17:12:04 IST" name="terminateSuiteconnection" finished-at="2024-09-11T17:12:04 IST" duration-ms="1" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Terminate SuiteConnections Done Sucessfully]]>
@@ -217,5 +172,5 @@
         </test-method> <!-- terminateSuiteconnection -->
       </class> <!-- com.amazon.registertest.RegisterTest -->
     </test> <!-- Test -->
-  </suite> <!-- Suite -->
+  </suite> <!-- FunctionalityTest -->
 </testng-results>

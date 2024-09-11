@@ -3,7 +3,9 @@ package com.amazon.logintest;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-public class LoginTest {
+import com.amazon.generic.common.BaseClass;
+
+public class LoginTest extends BaseClass {
 	@Test
 	public void login_validData()
 	{

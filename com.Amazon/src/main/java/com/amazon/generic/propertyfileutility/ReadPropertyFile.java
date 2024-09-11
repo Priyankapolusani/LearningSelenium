@@ -9,37 +9,37 @@ import java.util.Properties;
 import com.amazon.generic.common.FrameworkConstant;
 
 public class ReadPropertyFile implements FrameworkConstant {
-	FileInputStream fis;
-	FileOutputStream fos;
-	Properties p;
+	FileInputStream fis=null;
+	FileOutputStream fos=null;
+	Properties p=null;
 	
 	public String readdata(String key)  {
 		//Convert the Physical file into java understandable
 		try {
 			fis=new FileInputStream(PropertyPath);
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 		
 		//creating Instance for Properties class
 		p=new Properties();
 		
-		//load the all common Data
+		//load the property file
 		try {
 			p.load(fis);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
-		// fetch the data
+		// fetch the data by calling getProperty()
 				String data = p.getProperty(key);
-
+                System.out.println(data);
 				return data;
 		
-		
-		
+			
 	}
+	
 	public void writeData(String key,String value)  {
 		//Enter the data
 		p.put(key, value);

@@ -1,17 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="com.amazon.generic.listenerutility.Listener"/>
-  </listeners>
   <test thread-count="5" name="Test(failed)">
-    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.amazon.registertest.RegisterTest">
+      <class name="com.Amazonkart.kidsproducttest.KidsProduct8Test">
         <methods>
           <include name="login"/>
-          <include name="createUser_invalidData" invocation-numbers="0 1 2"/>
+          <include name="deleteProduct"/>
           <include name="postcondition"/>
+          <include name="terminateSuiteconnection"/>
+          <include name="closebrowser"/>
+          <include name="addProduct"/>
+          <include name="updateProduct"/>
+          <include name="getSuiteconnection"/>
+          <include name="precondition"/>
+          <include name="browserSetup"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- com.Amazonkart.kidsproducttest.KidsProduct8Test -->
+      <class name="com.Amazonkart.kidsproducttest.KidsProduct5Test">
+        <methods>
+          <include name="login"/>
+          <include name="postcondition"/>
+          <include name="terminateSuiteconnection"/>
+          <include name="closebrowser"/>
+          <include name="deleteProduct"/>
+          <include name="getSuiteconnection"/>
+          <include name="precondition"/>
+          <include name="browserSetup"/>
+          <include name="logout"/>
+          <include name="addProduct"/>
+          <include name="updateProduct"/>
+        </methods>
+      </class> <!-- com.Amazonkart.kidsproducttest.KidsProduct5Test -->
+      <class name="com.Amazonkart.kidsproducttest.KidsProduct4Test">
+        <methods>
+          <include name="deleteProduct"/>
+          <include name="login"/>
+          <include name="postcondition"/>
+          <include name="addProduct"/>
+          <include name="updateProduct"/>
           <include name="terminateSuiteconnection"/>
           <include name="closebrowser"/>
           <include name="getSuiteconnection"/>
@@ -19,7 +47,112 @@
           <include name="browserSetup"/>
           <include name="logout"/>
         </methods>
-      </class> <!-- com.amazon.registertest.RegisterTest -->
+      </class> <!-- com.Amazonkart.kidsproducttest.KidsProduct4Test -->
+      <class name="com.Amazonkart.kidsproducttest.KidsProduct7Test">
+        <methods>
+          <include name="deleteProduct"/>
+          <include name="login"/>
+          <include name="postcondition"/>
+          <include name="addProduct"/>
+          <include name="updateProduct"/>
+          <include name="terminateSuiteconnection"/>
+          <include name="closebrowser"/>
+          <include name="getSuiteconnection"/>
+          <include name="precondition"/>
+          <include name="browserSetup"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- com.Amazonkart.kidsproducttest.KidsProduct7Test -->
+      <class name="com.Amazonkart.kidsproducttest.KidsProduct3Test">
+        <methods>
+          <include name="addProduct"/>
+          <include name="updateProduct"/>
+          <include name="login"/>
+          <include name="postcondition"/>
+          <include name="terminateSuiteconnection"/>
+          <include name="closebrowser"/>
+          <include name="getSuiteconnection"/>
+          <include name="precondition"/>
+          <include name="deleteProduct"/>
+          <include name="browserSetup"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- com.Amazonkart.kidsproducttest.KidsProduct3Test -->
+      <class name="com.Amazonkart.kidsproducttest.KidsProduct9Test">
+        <methods>
+          <include name="login"/>
+          <include name="postcondition"/>
+          <include name="deleteProduct"/>
+          <include name="addProduct"/>
+          <include name="updateProduct"/>
+          <include name="terminateSuiteconnection"/>
+          <include name="closebrowser"/>
+          <include name="getSuiteconnection"/>
+          <include name="precondition"/>
+          <include name="browserSetup"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- com.Amazonkart.kidsproducttest.KidsProduct9Test -->
+      <class name="com.Amazonkart.kidsproducttest.KidsProduct2Test">
+        <methods>
+          <include name="login"/>
+          <include name="postcondition"/>
+          <include name="addProduct"/>
+          <include name="updateProduct"/>
+          <include name="terminateSuiteconnection"/>
+          <include name="closebrowser"/>
+          <include name="getSuiteconnection"/>
+          <include name="precondition"/>
+          <include name="browserSetup"/>
+          <include name="deleteProduct"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- com.Amazonkart.kidsproducttest.KidsProduct2Test -->
+      <class name="com.Amazonkart.kidsproducttest.KidsProduct1Test">
+        <methods>
+          <include name="login"/>
+          <include name="addProduct"/>
+          <include name="updateProduct"/>
+          <include name="postcondition"/>
+          <include name="terminateSuiteconnection"/>
+          <include name="closebrowser"/>
+          <include name="getSuiteconnection"/>
+          <include name="precondition"/>
+          <include name="browserSetup"/>
+          <include name="logout"/>
+          <include name="deleteProduct"/>
+        </methods>
+      </class> <!-- com.Amazonkart.kidsproducttest.KidsProduct1Test -->
+      <class name="com.Amazonkart.kidsproducttest.KidsProduct6Test">
+        <methods>
+          <include name="deleteProduct"/>
+          <include name="login"/>
+          <include name="postcondition"/>
+          <include name="terminateSuiteconnection"/>
+          <include name="addProduct"/>
+          <include name="updateProduct"/>
+          <include name="closebrowser"/>
+          <include name="getSuiteconnection"/>
+          <include name="precondition"/>
+          <include name="browserSetup"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- com.Amazonkart.kidsproducttest.KidsProduct6Test -->
+      <class name="com.Amazonkart.kidsproducttest.KidsProduct10Test">
+        <methods>
+          <include name="addProduct"/>
+          <include name="updateProduct"/>
+          <include name="login"/>
+          <include name="postcondition"/>
+          <include name="deleteProduct"/>
+          <include name="terminateSuiteconnection"/>
+          <include name="closebrowser"/>
+          <include name="getSuiteconnection"/>
+          <include name="precondition"/>
+          <include name="browserSetup"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- com.Amazonkart.kidsproducttest.KidsProduct10Test -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

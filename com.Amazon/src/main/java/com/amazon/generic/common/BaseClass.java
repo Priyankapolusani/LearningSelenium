@@ -16,6 +16,10 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 
+import com.aventstack.extentreports.reporter.configuration.Theme;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 
 public class BaseClass extends ObjectUtility{
@@ -58,73 +62,76 @@ public class BaseClass extends ObjectUtility{
 	}
 	@Parameters("browser")
 	@BeforeClass
-	public void browserSetup(String bname)
+	public void browserSetup(String browsername)
 	
 	{
-		/*//Configure the Browser
-		System.setProperty("webdriver.chrome.driver","./src/main/resources/chromedriver.exe");
-		System.setProperty("webdriver.gecko.driver","./src\\main\\resources\\geckodriver.exe");
-		System.setProperty("webdriver.edge.driver","./src\\main\\resources\\msedgedriver.exe");*/
-		
-		//Using Scanner Class
-		//Scanner sc=new Scanner(System.in);
-		//System.out.println("Enter The Browser Name:");
-		//String bname=sc.next();
-		
-		//if User Gives Browsername="chrome"
-		if(bname.equals("chrome")) {
-			//Launch The Browser-Chrome
-			driver=new ChromeDriver();
-		}
-		//if User Gives Browsername="firefox"
-		else if(bname.equals("firefox")) {
-			//Launch The Browser-Firefox
-			driver=new FirefoxDriver();
-		}
-		//if User Gives Browsername="edge"
-		else if(bname.equals("edge")) {
-			//Launch The Browser-Edge
-			driver=new EdgeDriver();
-		}
-		else
-		{
-			System.out.println("U have Enter the Invalid Browser name and i am executing default Browser");
-			driver=new ChromeDriver();
-		}
-		
-		//create object for all
-		objectCreation();
-		
-		//create object of property file 
-		//ReadPropertyFile p_ref=new ReadPropertyFile();
-		
-		//fetch data
-		String url=propertyobj.readdata("url");
-		//propertyobj.displaydata("url");
-		//propertyobj.writeData("ename", "test@gmail.com");
 		
 		
-		// Navigate to the Application via URL
-		driver.get(url);
+	
+		//Create the TestReport
+		test=	report.createTest("registerValidData");
 		
-		Reporter.log("BrowserSetup sucessfully",true);
+
+		
+		//Step 1:Launch the browser
+		webdriverobj.launchBrowser(browsername);
+		
+		//Step 2: Maximize the browser
+		webdriverobj.maximizeBrowser();
+		
+		
+		// Fetch url data property file
+		String url = propertyobj.readdata("url");
+
+
+		    webdriverobj.navigateToApp(url);
+		    
+		Reporter.log("BrowserSetup "+browsername+"successful", true);
+		
+		
+		
+		
 	}
 	@AfterClass
 	public void closebrowser()
 	{
 		//Close The Browser
-		driver.close();
+		webdriverobj.closeWindow();
 	Reporter.log("CloseBrowser Sucessfully",true);	
 	}
 	@BeforeTest
 	public void precondition()
 	
 	{
+		//create object for all library
+		objectCreation();
+		
+		//configure the SparkReport Information
+		spark.config().setDocumentTitle("Regresstion testing For the RegisterPage");
+		spark.config().setReportName("RegressionSuite");
+		spark.config().setTheme(Theme.DARK);
+		
+		//Attach the Spark Report and ExtentReport
+		report.attachReporter(spark);
+		
+		//configure the system information in Extent Report
+		report.setSystemInfo("DeviceName:","Priyanka");
+		report.setSystemInfo("OperatingSystem:", "Windows 10");
+		report.setSystemInfo("Browser:", "Chrome");
+		report.setSystemInfo("BrowserVersion", "chrome-127.0.6533.120");
+		
+		
 		Reporter.log("PreCondition Done Sucessfully",true);	
 	}
+	
+	
+
+	
+	
 	@AfterTest
 	public void postcondition()
 	{
+		report.flush();
 		Reporter.log("PostCondition Done Sucessfully",true);	
 	}
 	@BeforeSuite
